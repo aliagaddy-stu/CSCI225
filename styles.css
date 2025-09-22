@@ -1,0 +1,262 @@
+/* CSCI225 Homepage Styles */
+/* Author: Alia Gaddy */
+/* Course: CSCI225 Fall 2025 */
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(63, 66, 92);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Typography */
+h1 {
+    color: rgb(11, 10, 10);
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 15px;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+    background-color: rgb(63, 66, 92);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar a {
+    color: rgb(155, 61, 119);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: rgb(180, 80, 140);
+}
+
+/* Main content sections */
+.introduction {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.introduction img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+/* Section styling */
+.assignments {
+    color: rgb(26, 23, 23);
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-information {
+    color: rgb(26, 23, 23);
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio {
+    color: rgb(26, 23, 23);
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Class Schedule section */
+.class-schedule {
+    color: rgb(16, 14, 14);
+    font-size: 18px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+table th,
+table td {
+    border: 1px solid #333;
+    padding: 12px;
+    text-align: center;
+}
+
+table th {
+    background-color: rgb(63, 66, 92);
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #e8e8e8;
+}
+
+/* Links */
+a {
+    color: rgb(155, 61, 119);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(180, 80, 140);
+    text-decoration: underline;
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+.assignments li,
+.contact-information li,
+.portfolio li {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    margin: 8px 0;
+    padding: 8px;
+}
+
+/* Button styling */
+button {
+    background-color: rgb(155, 61, 119);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(135, 41, 99);
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(40, 43, 60);
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .navbar {
+        padding: 10px;
+    }
+    
+    .navbar a {
+        display: block;
+        margin: 5px 0;
+    }
+    
+    .introduction {
+        margin-top: 120px;
+    }
+    
+    .introduction img {
+        width: 100%;
+        height: auto;
+        max-width: 400px;
+    }
+    
+    .assignments,
+    .contact-information,
+    .portfolio,
+    .class-schedule {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    table th,
+    table td {
+        padding: 8px;
+    }
+}
