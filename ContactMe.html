@@ -1,0 +1,106 @@
+<html>
+<head> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Me</title>
+  </head>
+<body>
+    <h1>Contact Me</h1>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>
+    
+    <p>
+        Admissions Office hosts campus tours.
+    </p>
+    
+    <h2>Feedback Form</h2>
+    <form name="feedback" action="#" method="post">
+        <div>
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="fname" placeholder="anonymous" required>
+        </div>
+        
+        <div>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" placeholder="anonymous" required>
+        </div>
+        
+        <div>
+            <label for="mail">Email Address:</label>
+            <input type="email" id="mail" name="mail" placeholder="name@domain.com">
+            <input type="text" autofocus>  
+            
+            <!-- Focus on page load -->
+          <input type="email" autocomplete="email">             <!-- Browser autocomplete -->
+          <input type="name" autocomplete="name">               <!-- Name autocomplete -->
+        </div>
+        
+        <div>
+            <label>Would you recommend this website?</label>
+            <div>
+                <input type="radio" id="recommend_yes" name="recommend" value="yes">
+                <label for="recommend_yes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="recommend_no" name="recommend" value="no">
+                <label for="recommend_no">No</label>
+            </div>
+        </div>
+        
+        <div>
+            <label for="favorite_website">What is your favorite website?</label>
+            <select id="favorite_website" name="favorite_website">
+                <option value="">-- Please select --</option>
+                <option value="google">Google</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="time">Time</option>
+                <option value="youtube">YouTube</option>
+                <option value="amazon">Amazon</option>
+                <option value="linkedin">LinkedIn</option>
+                <option value="reddit">Reddit</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="comments">Additional Comments:</label>
+            <textarea id="comments" name="comments" rows="4" placeholder="Your comments here..."></textarea>
+        </div>
+        
+        <div>
+            <label for="city">What city are you from?</label>
+            <input type="text" id="city" name="city" list="cities" placeholder="Start typing your city...">
+            <datalist id="cities">
+                <option value="New York">
+                <option value="Los Angeles">
+                <option value="Chicago">
+                <option value="Houston">
+                <option value="Phoenix">
+                <option value="Philadelphia">
+                <option value="San Antonio">
+                <option value="San Diego">
+                <option value="Dallas">
+                <option value="San Jose">
+                <option value="Austin">
+                <option value="Jacksonville">
+                <option value="Fort Worth">
+                <option value="Columbus">
+                <option value="Charlotte">
+                <option value="San Francisco">
+                <option value="Indianapolis">
+                <option value="Seattle">
+                <option value="Denver">
+                <option value="Boston">
+            </datalist>
+        </div>
+        
+        <div>
+            <input type="submit" value="Submit Feedback">
+        </div>
+
+    </form>
+    </body>
+    <footer>
+
+    </footer>
+</html>
